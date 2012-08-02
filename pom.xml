@@ -1,0 +1,72 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>au.edu.jcu.fascinator.plugins</groupId>
+    <artifactId>plugin-harvester-directoryName</artifactId>
+    <name>The Fascinator - Plugin - Harvester - Directory Name</name>
+    <description>Performs a batch harvest of a directory name in a filesystem supported by Java</description>
+    <url>http://maven.apache.org</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <parent>
+        <groupId>com.googlecode.the-fascinator</groupId>
+        <artifactId>fascinator-plugins</artifactId>
+        <version>1.2-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>com.googlecode.the-fascinator</groupId>
+            <artifactId>fascinator-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.the-fascinator</groupId>
+            <artifactId>fascinator-plugin-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.the-fascinator.plugins</groupId>
+            <artifactId>plugin-storage-ram</artifactId>
+            <scope>test</scope>
+        </dependency>
+     <!-- Database -->
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+        <!-- 10.5.3.0 has a buggy POM -->
+            <version>10.5.3.0_1</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                    <goal>jar</goal>
+                    </goals>
+                    <configuration>
+                    <excludes>
+                        <exclude>.DS_Store</exclude>
+                    </excludes>
+                    </configuration>
+                </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

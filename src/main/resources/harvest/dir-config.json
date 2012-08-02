@@ -1,0 +1,18 @@
+{
+    "harvester": {
+        "type": "directory",
+        "directory": {
+            "targets": [ {
+                "baseDir": "${test.dir}/Downloads"
+            } ]
+        },
+        "default-files": {
+            "default-metadata-filename" : "default-metadata.json",
+            "override-metadata-filename": "metadata.json"
+        },
+        "metadata-types": [ 
+            {"type" : "occurrences"},
+            {"type" : "suitability"}
+        ]
+    }
+}

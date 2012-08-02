@@ -1,0 +1,6 @@
+{
+    "baseDir": {
+        "type": "text",
+        "default": "${user.home}"
+    }
+}
