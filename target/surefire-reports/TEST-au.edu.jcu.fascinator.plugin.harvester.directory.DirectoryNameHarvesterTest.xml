@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="4" time="3.551" errors="0" skipped="0" tests="4" name="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
+    <property name="java.vm.version" value="20.8-b03-424"/>
+    <property name="awt.nativeDoubleBuffering" value="true"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="mrj.build" value="11M3720"/>
+    <property name="java.vm.vendor" value="Apple Inc."/>
+    <property name="java.vendor.url" value="http://www.apple.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory"/>
+    <property name="java.runtime.version" value="1.6.0_33-b03-424-11M3720"/>
+    <property name="derby.system.home" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/dir-harvest-cache"/>
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory"/>
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="surefire.real.class.path" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter732157651444429760.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.jnu.encoding" value="MacRoman"/>
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="surefire.test.class.path" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes:/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/classes:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/fascinator-common/1.2-SNAPSHOT/fascinator-common-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/fascinator-vocabulary/1.2-SNAPSHOT/fascinator-vocabulary-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/jarooster2/.m2/repository/ch/qos/logback/logback-core/0.9.29/logback-core-0.9.29.jar:/Users/jarooster2/.m2/repository/ch/qos/logback/logback-classic/0.9.29/logback-classic-0.9.29.jar:/Users/jarooster2/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.1/jcl-over-slf4j-1.6.1.jar:/Users/jarooster2/.m2/repository/org/slf4j/log4j-over-slf4j/1.6.1/log4j-over-slf4j-1.6.1.jar:/Users/jarooster2/.m2/repository/org/semweb4j/rdf2go.api/4.7.2/rdf2go.api-4.7.2.jar:/Users/jarooster2/.m2/repository/org/semweb4j/rdf2go.impl.jena24/4.7.2/rdf2go.impl.jena24-4.7.2.jar:/Users/jarooster2/.m2/repository/net/sourceforge/jena/jena/2.4/jena-2.4.jar:/Users/jarooster2/.m2/repository/net/sourceforge/jena/arq/1.4/arq-1.4.jar:/Users/jarooster2/.m2/repository/net/sourceforge/jena/iri/2.4/iri-2.4.jar:/Users/jarooster2/.m2/repository/com/ibm/icu/icu4j/3.4.4/icu4j-3.4.4.jar:/Users/jarooster2/.m2/repository/antlr/antlr/2.7.5/antlr-2.7.5.jar:/Users/jarooster2/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/Users/jarooster2/.m2/repository/concurrent/concurrent/1.3.4/concurrent-1.3.4.jar:/Users/jarooster2/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/jarooster2/.m2/repository/org/codehaus/woodstox/wstx-lgpl/3.1.1/wstx-lgpl-3.1.1.jar:/Users/jarooster2/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-vocabulary-core/1.4.0/aperture-vocabulary-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-util/1.4.0/aperture-util-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-rdf/1.4.0/aperture-rdf-1.4.0.jar:/Users/jarooster2/.m2/repository/info/aduna/commons/aduna-commons-xml/2.4.0/aduna-commons-xml-2.4.0.jar:/Users/jarooster2/.m2/repository/info/aduna/commons/aduna-commons-text/2.4.0/aduna-commons-text-2.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-mime-identifier-magic/1.4.0/aperture-mime-identifier-magic-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-mime-identifier-core/1.4.0/aperture-mime-identifier-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-core/1.4.0/aperture-extractor-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-default-extractor/1.4.0/aperture-default-extractor-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-adobe-pdf/1.4.0/aperture-extractor-adobe-pdf-1.4.0.jar:/Users/jarooster2/.m2/repository/org/apache/pdfbox/pdfbox/0.8.0-incubating.bundle2/pdfbox-0.8.0-incubating.bundle2.jar:/Users/jarooster2/.m2/repository/org/apache/pdfbox/fontbox/0.8.0-incubator.bundle/fontbox-0.8.0-incubator.bundle.jar:/Users/jarooster2/.m2/repository/org/apache/pdfbox/jempbox/0.8.0-incubator.bundle/jempbox-0.8.0-incubator.bundle.jar:/Users/jarooster2/.m2/repository/org/bouncycastle/bcmail-jdk14/1.43.bundle2/bcmail-jdk14-1.43.bundle2.jar:/Users/jarooster2/.m2/repository/org/bouncycastle/bcprov-jdk14/1.43.bundle2/bcprov-jdk14-1.43.bundle2.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-adobe-xmp/1.4.0/aperture-extractor-adobe-xmp-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-image-jpg/1.4.0/aperture-extractor-image-jpg-1.4.0.jar:/Users/jarooster2/.m2/repository/com/drewnoakes/metadata-extractor/2.4.0-beta1.bundle/metadata-extractor-2.4.0-beta1.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-audio-mp3/1.4.0/aperture-extractor-audio-mp3-1.4.0.jar:/Users/jarooster2/.m2/repository/org/jaudiotagger/jaudiotagger/1.0.8.bundle/jaudiotagger-1.0.8.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-corel-office/1.4.0/aperture-extractor-corel-office-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-corel-util/1.4.0/aperture-extractor-corel-util-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-util/1.4.0/aperture-extractor-microsoft-util-1.4.0.jar:/Users/jarooster2/.m2/repository/org/apache/poi/poi/3.5-FINAL.bundle/poi-3.5-FINAL.bundle.jar:/Users/jarooster2/.m2/repository/org/apache/poi/poi-scratchpad/3.5-FINAL.bundle/poi-scratchpad-3.5-FINAL.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-message-mime/1.4.0/aperture-extractor-message-mime-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-crawler-sub-mime/1.4.0/aperture-crawler-sub-mime-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-accessor-core/1.4.0/aperture-accessor-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-datasource-core/1.4.0/aperture-datasource-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-crawler-core/1.4.0/aperture-crawler-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-crawler-mail/1.4.0/aperture-crawler-mail-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-helper-html/1.4.0/aperture-helper-html-1.4.0.jar:/Users/jarooster2/.m2/repository/org/htmlparser/htmlparser/1.6.bundle/htmlparser-1.6.bundle.jar:/Users/jarooster2/.m2/repository/org/apache/felix/commons/org.apache.felix.commons.mail/1.4.1-aperture-0003/org.apache.felix.commons.mail-1.4.1-aperture-0003.jar:/Users/jarooster2/.m2/repository/com/beetstra/jutf7/jutf7/0.9.0.bundle/jutf7-0.9.0.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-office/1.4.0/aperture-extractor-microsoft-office-1.4.0.jar:/Users/jarooster2/.m2/repository/org/textmining/tm-extractors/1.0-aperture.bundle/tm-extractors-1.0-aperture.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-quattro/1.4.0/aperture-extractor-microsoft-quattro-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-visio/1.4.0/aperture-extractor-microsoft-visio-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-works/1.4.0/aperture-extractor-microsoft-works-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-opendocument/1.4.0/aperture-extractor-opendocument-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-openxml/1.4.0/aperture-extractor-openxml-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-html/1.4.0/aperture-extractor-text-html-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-plain/1.4.0/aperture-extractor-text-plain-1.4.0.jar:/Users/jarooster2/.m2/repository/net/sourceforge/juniversalchardet/juniversalchardet/1.0.3.bundle/juniversalchardet-1.0.3.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-rtf/1.4.0/aperture-extractor-text-rtf-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-xml/1.4.0/aperture-extractor-text-xml-1.4.0.jar:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/fascinator-plugin-api/1.2-SNAPSHOT/fascinator-plugin-api-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/jarooster2/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/jarooster2/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar:/Users/jarooster2/.m2/repository/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar:/Users/jarooster2/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/jarooster2/.m2/repository/jaxen/jaxen/1.1.1/jaxen-1.1.1.jar:/Users/jarooster2/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/jarooster2/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/jarooster2/.m2/repository/org/codehaus/jackson/jackson-mapper-lgpl/1.1.0/jackson-mapper-lgpl-1.1.0.jar:/Users/jarooster2/.m2/repository/org/codehaus/jackson/jackson-core-lgpl/1.1.0/jackson-core-lgpl-1.1.0.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/activemq-core/5.3.0/activemq-core-5.3.0.jar:/Users/jarooster2/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/activeio-core/3.1.2/activeio-core-3.1.2.jar:/Users/jarooster2/.m2/repository/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/kahadb/5.3.0/kahadb-5.3.0.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/protobuf/activemq-protobuf/1.0/activemq-protobuf-1.0.jar:/Users/jarooster2/.m2/repository/org/apache/geronimo/specs/geronimo-j2ee-management_1.0_spec/1.0/geronimo-j2ee-management_1.0_spec-1.0.jar:/Users/jarooster2/.m2/repository/org/springframework/spring-context/2.5.6/spring-context-2.5.6.jar:/Users/jarooster2/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/jarooster2/.m2/repository/org/springframework/spring-beans/2.5.6/spring-beans-2.5.6.jar:/Users/jarooster2/.m2/repository/org/springframework/spring-core/2.5.6/spring-core-2.5.6.jar:/Users/jarooster2/.m2/repository/commons-net/commons-net/2.0/commons-net-2.0.jar:/Users/jarooster2/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar:/Users/jarooster2/.m2/repository/junit/junit/4.6/junit-4.6.jar:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/plugins/plugin-storage-ram/1.2-SNAPSHOT/plugin-storage-ram-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/org/apache/derby/derby/10.5.3.0_1/derby-10.5.3.0_1.jar:"/>
+    <property name="test.cache.dir" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/dir-harvest-cache"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.8"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/jarooster2"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="MacRoman"/>
+    <property name="user.name" value="jarooster2"/>
+    <property name="java.class.path" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes:/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/classes:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/fascinator-common/1.2-SNAPSHOT/fascinator-common-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/fascinator-vocabulary/1.2-SNAPSHOT/fascinator-vocabulary-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/jarooster2/.m2/repository/ch/qos/logback/logback-core/0.9.29/logback-core-0.9.29.jar:/Users/jarooster2/.m2/repository/ch/qos/logback/logback-classic/0.9.29/logback-classic-0.9.29.jar:/Users/jarooster2/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.1/jcl-over-slf4j-1.6.1.jar:/Users/jarooster2/.m2/repository/org/slf4j/log4j-over-slf4j/1.6.1/log4j-over-slf4j-1.6.1.jar:/Users/jarooster2/.m2/repository/org/semweb4j/rdf2go.api/4.7.2/rdf2go.api-4.7.2.jar:/Users/jarooster2/.m2/repository/org/semweb4j/rdf2go.impl.jena24/4.7.2/rdf2go.impl.jena24-4.7.2.jar:/Users/jarooster2/.m2/repository/net/sourceforge/jena/jena/2.4/jena-2.4.jar:/Users/jarooster2/.m2/repository/net/sourceforge/jena/arq/1.4/arq-1.4.jar:/Users/jarooster2/.m2/repository/net/sourceforge/jena/iri/2.4/iri-2.4.jar:/Users/jarooster2/.m2/repository/com/ibm/icu/icu4j/3.4.4/icu4j-3.4.4.jar:/Users/jarooster2/.m2/repository/antlr/antlr/2.7.5/antlr-2.7.5.jar:/Users/jarooster2/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/Users/jarooster2/.m2/repository/concurrent/concurrent/1.3.4/concurrent-1.3.4.jar:/Users/jarooster2/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/jarooster2/.m2/repository/org/codehaus/woodstox/wstx-lgpl/3.1.1/wstx-lgpl-3.1.1.jar:/Users/jarooster2/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-vocabulary-core/1.4.0/aperture-vocabulary-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-util/1.4.0/aperture-util-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-rdf/1.4.0/aperture-rdf-1.4.0.jar:/Users/jarooster2/.m2/repository/info/aduna/commons/aduna-commons-xml/2.4.0/aduna-commons-xml-2.4.0.jar:/Users/jarooster2/.m2/repository/info/aduna/commons/aduna-commons-text/2.4.0/aduna-commons-text-2.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-mime-identifier-magic/1.4.0/aperture-mime-identifier-magic-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-mime-identifier-core/1.4.0/aperture-mime-identifier-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-core/1.4.0/aperture-extractor-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-default-extractor/1.4.0/aperture-default-extractor-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-adobe-pdf/1.4.0/aperture-extractor-adobe-pdf-1.4.0.jar:/Users/jarooster2/.m2/repository/org/apache/pdfbox/pdfbox/0.8.0-incubating.bundle2/pdfbox-0.8.0-incubating.bundle2.jar:/Users/jarooster2/.m2/repository/org/apache/pdfbox/fontbox/0.8.0-incubator.bundle/fontbox-0.8.0-incubator.bundle.jar:/Users/jarooster2/.m2/repository/org/apache/pdfbox/jempbox/0.8.0-incubator.bundle/jempbox-0.8.0-incubator.bundle.jar:/Users/jarooster2/.m2/repository/org/bouncycastle/bcmail-jdk14/1.43.bundle2/bcmail-jdk14-1.43.bundle2.jar:/Users/jarooster2/.m2/repository/org/bouncycastle/bcprov-jdk14/1.43.bundle2/bcprov-jdk14-1.43.bundle2.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-adobe-xmp/1.4.0/aperture-extractor-adobe-xmp-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-image-jpg/1.4.0/aperture-extractor-image-jpg-1.4.0.jar:/Users/jarooster2/.m2/repository/com/drewnoakes/metadata-extractor/2.4.0-beta1.bundle/metadata-extractor-2.4.0-beta1.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-audio-mp3/1.4.0/aperture-extractor-audio-mp3-1.4.0.jar:/Users/jarooster2/.m2/repository/org/jaudiotagger/jaudiotagger/1.0.8.bundle/jaudiotagger-1.0.8.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-corel-office/1.4.0/aperture-extractor-corel-office-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-corel-util/1.4.0/aperture-extractor-corel-util-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-util/1.4.0/aperture-extractor-microsoft-util-1.4.0.jar:/Users/jarooster2/.m2/repository/org/apache/poi/poi/3.5-FINAL.bundle/poi-3.5-FINAL.bundle.jar:/Users/jarooster2/.m2/repository/org/apache/poi/poi-scratchpad/3.5-FINAL.bundle/poi-scratchpad-3.5-FINAL.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-message-mime/1.4.0/aperture-extractor-message-mime-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-crawler-sub-mime/1.4.0/aperture-crawler-sub-mime-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-accessor-core/1.4.0/aperture-accessor-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-datasource-core/1.4.0/aperture-datasource-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-crawler-core/1.4.0/aperture-crawler-core-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-crawler-mail/1.4.0/aperture-crawler-mail-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-helper-html/1.4.0/aperture-helper-html-1.4.0.jar:/Users/jarooster2/.m2/repository/org/htmlparser/htmlparser/1.6.bundle/htmlparser-1.6.bundle.jar:/Users/jarooster2/.m2/repository/org/apache/felix/commons/org.apache.felix.commons.mail/1.4.1-aperture-0003/org.apache.felix.commons.mail-1.4.1-aperture-0003.jar:/Users/jarooster2/.m2/repository/com/beetstra/jutf7/jutf7/0.9.0.bundle/jutf7-0.9.0.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-office/1.4.0/aperture-extractor-microsoft-office-1.4.0.jar:/Users/jarooster2/.m2/repository/org/textmining/tm-extractors/1.0-aperture.bundle/tm-extractors-1.0-aperture.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-quattro/1.4.0/aperture-extractor-microsoft-quattro-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-visio/1.4.0/aperture-extractor-microsoft-visio-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-microsoft-works/1.4.0/aperture-extractor-microsoft-works-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-opendocument/1.4.0/aperture-extractor-opendocument-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-openxml/1.4.0/aperture-extractor-openxml-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-html/1.4.0/aperture-extractor-text-html-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-plain/1.4.0/aperture-extractor-text-plain-1.4.0.jar:/Users/jarooster2/.m2/repository/net/sourceforge/juniversalchardet/juniversalchardet/1.0.3.bundle/juniversalchardet-1.0.3.bundle.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-rtf/1.4.0/aperture-extractor-text-rtf-1.4.0.jar:/Users/jarooster2/.m2/repository/org/semanticdesktop/aperture/aperture-extractor-text-xml/1.4.0/aperture-extractor-text-xml-1.4.0.jar:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/fascinator-plugin-api/1.2-SNAPSHOT/fascinator-plugin-api-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/jarooster2/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar:/Users/jarooster2/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar:/Users/jarooster2/.m2/repository/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar:/Users/jarooster2/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/jarooster2/.m2/repository/jaxen/jaxen/1.1.1/jaxen-1.1.1.jar:/Users/jarooster2/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/jarooster2/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/jarooster2/.m2/repository/org/codehaus/jackson/jackson-mapper-lgpl/1.1.0/jackson-mapper-lgpl-1.1.0.jar:/Users/jarooster2/.m2/repository/org/codehaus/jackson/jackson-core-lgpl/1.1.0/jackson-core-lgpl-1.1.0.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/activemq-core/5.3.0/activemq-core-5.3.0.jar:/Users/jarooster2/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/activeio-core/3.1.2/activeio-core-3.1.2.jar:/Users/jarooster2/.m2/repository/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/kahadb/5.3.0/kahadb-5.3.0.jar:/Users/jarooster2/.m2/repository/org/apache/activemq/protobuf/activemq-protobuf/1.0/activemq-protobuf-1.0.jar:/Users/jarooster2/.m2/repository/org/apache/geronimo/specs/geronimo-j2ee-management_1.0_spec/1.0/geronimo-j2ee-management_1.0_spec-1.0.jar:/Users/jarooster2/.m2/repository/org/springframework/spring-context/2.5.6/spring-context-2.5.6.jar:/Users/jarooster2/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/jarooster2/.m2/repository/org/springframework/spring-beans/2.5.6/spring-beans-2.5.6.jar:/Users/jarooster2/.m2/repository/org/springframework/spring-core/2.5.6/spring-core-2.5.6.jar:/Users/jarooster2/.m2/repository/commons-net/commons-net/2.0/commons-net-2.0.jar:/Users/jarooster2/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar:/Users/jarooster2/.m2/repository/junit/junit/4.6/junit-4.6.jar:/Users/jarooster2/.m2/repository/com/googlecode/the-fascinator/plugins/plugin-storage-ram/1.2-SNAPSHOT/plugin-storage-ram-1.2-SNAPSHOT.jar:/Users/jarooster2/.m2/repository/org/apache/derby/derby/10.5.3.0_1/derby-10.5.3.0_1.jar:"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
+    <property name="sun.java.command" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter732157651444429760.jar /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire4912361185691616569tmp /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire843627207646855475tmp"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="apple.awt.CToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="test.dir" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes"/>
+    <property name="java.version" value="1.6.0_33"/>
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"/>
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"/>
+    <property name="java.vendor" value="Apple Inc."/>
+    <property name="localRepository" value="/Users/jarooster2/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="fascinator.home" value="/Users/jarooster2/.fascinator"/>
+    <property name="mrj.version" value="1070.1.6.0_33-424"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.909" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdList">
+    <failure message="expected:&lt;8&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;4&gt;
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.failNotEquals(Assert.java:689)
+	at org.junit.Assert.assertEquals(Assert.java:127)
+	at org.junit.Assert.assertEquals(Assert.java:514)
+	at org.junit.Assert.assertEquals(Assert.java:498)
+	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdList(DirectoryNameHarvesterTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</failure>
+    <system-out>16:28:11.082 [main] INFO  c.g.fascinator.common.FascinatorHome - Set Fascinator home to &apos;/Users/jarooster2/.fascinator&apos;
+16:28:11.128 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Caching is either disabled or not configured properly:
+16:28:11.128 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache Type: &apos;null&apos;
+16:28:11.128 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache ID: &apos;null&apos;
+16:28:11.128 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
+</system-out>
+  </testcase>
+  <testcase time="0.04" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListMultipleTargets">
+    <failure message="expected:&lt;16&gt; but was:&lt;8&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;16&gt; but was:&lt;8&gt;
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.failNotEquals(Assert.java:689)
+	at org.junit.Assert.assertEquals(Assert.java:127)
+	at org.junit.Assert.assertEquals(Assert.java:514)
+	at org.junit.Assert.assertEquals(Assert.java:498)
+	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdListMultipleTargets(DirectoryNameHarvesterTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</failure>
+    <system-out>16:28:11.870 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Caching is either disabled or not configured properly:
+16:28:11.870 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache Type: &apos;null&apos;
+16:28:11.870 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache ID: &apos;null&apos;
+16:28:11.870 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
+16:28:11.877 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads2&apos;
+</system-out>
+  </testcase>
+  <testcase time="1.603" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingChanges">
+    <failure message="expected:&lt;8&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;4&gt;
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.failNotEquals(Assert.java:689)
+	at org.junit.Assert.assertEquals(Assert.java:127)
+	at org.junit.Assert.assertEquals(Assert.java:514)
+	at org.junit.Assert.assertEquals(Assert.java:498)
+	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdListWithCachingChanges(DirectoryNameHarvesterTest.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</failure>
+    <system-out>16:28:13.237 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;basic&apos; not found, creating now!
+16:28:13.375 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;hashed&apos; not found, creating now!
+16:28:13.438 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
+</system-out>
+  </testcase>
+  <testcase time="0.949" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingNoChanges">
+    <failure message="expected:&lt;8&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;4&gt;
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.failNotEquals(Assert.java:689)
+	at org.junit.Assert.assertEquals(Assert.java:127)
+	at org.junit.Assert.assertEquals(Assert.java:514)
+	at org.junit.Assert.assertEquals(Assert.java:498)
+	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdListWithCachingNoChanges(DirectoryNameHarvesterTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</failure>
+    <system-out>16:28:13.520 [main] WARN  a.e.j.f.p.h.directory.DerbyCache - Using previously specified data directory: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/dir-harvest-cache&apos;, provided value has been ignored: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/dir-harvest-cache&apos;
+16:28:14.284 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;basic&apos; not found, creating now!
+16:28:14.323 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;hashed&apos; not found, creating now!
+16:28:14.368 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
+</system-out>
+  </testcase>
+</testsuite>
