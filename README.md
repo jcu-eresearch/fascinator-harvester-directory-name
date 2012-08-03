@@ -19,11 +19,17 @@ from the File System Harvester.
 Option | Description |Required | Default
 
 baseDir | Path of subdirectories to be harvested | Yes | ${user.home}/Documents/public/
+
 force | Force harvest the specified directory or file again even when it's not modified (ignore cache) | No | false
+
 caching | Caching method to use. Valid entries are 'basic' and 'hashed' | No | null
+
 cacheId | The cache ID to use in the database if caching is in use. | Yes (if 'caching' is provided) | null 
+
 payloadId | The payload identifier used to store the JSON data | No | defaults to "metadata.json"
+
 derbyHome | Path to use for the file store of the database. Should match other Derby paths provided in the configuration file for the application. | Yes (if 'caching' is provided) | null
+
 	         
       Caching
 
