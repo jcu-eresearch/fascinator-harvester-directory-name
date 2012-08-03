@@ -14,24 +14,55 @@ for each metadata type detected. The caching used is the same as that
 from the File System Harvester.
 
 
-      Configuration
-
-Option | Description |Required | Default
-
-baseDir | Path of subdirectories to be harvested | Yes | ${user.home}/Documents/public/
-
-force | Force harvest the specified directory or file again even when it's not modified (ignore cache) | No | false
-
-caching | Caching method to use. Valid entries are 'basic' and 'hashed' | No | null
-
-cacheId | The cache ID to use in the database if caching is in use. | Yes (if 'caching' is provided) | null 
-
-payloadId | The payload identifier used to store the JSON data | No | defaults to "metadata.json"
-
-derbyHome | Path to use for the file store of the database. Should match other Derby paths provided in the configuration file for the application. | Yes (if 'caching' is provided) | null
-
+Configuration
+-------------
+<table>
+<tr>
+	<th>Option </th>
+	<th>Description</th>
+	<th>Required</th>
+	<th>Default</th>
+</tr>
+<tr>
+	<td>baseDir</td>
+	<td>Path of subdirectories to be harvested</td>
+	<td>Yes</td>
+	<td> ${user.home}/Documents/public/</td>
+</tr>
+<tr>
+	<td>force</td>
+	<td>Force harvest the specified directory or file again even when it's not modified (ignore cache) </td>
+	<td>No </td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>caching </td> 
+	<td>Caching method to use. Valid entries are 'basic' and 'hashed' </td>
+	<td>No </td>
+	<td>null</td>
+</tr>
+<tr>
+	<td>cacheId </td> 
+	<td>The cache ID to use in the database if caching is in use. </td>
+	<td>Yes (if 'caching' is provided) </td> 
+	<td>null </td>
+</tr>
+<tr>
+	<td>payloadId </td> 
+	<td>The payload identifier used to store the JSON data </td>
+	<td>No </td> 
+	<td>defaults to "metadata.json"</td>
+</tr>
+<tr>
+	<td>derbyHome </td>
+	<td>Path to use for the file store of the database. Should match other Derby paths provided in the configuration file for the application.</td> 
+	<td>Yes (if 'caching' is provided) </td> 
+	<td>null</td>
+</tr>
+</table>
 	         
-      Caching
+Caching
+-------
 
 With regards to the underlying cache you have three options for
 configuration:
@@ -52,7 +83,8 @@ configuration:
 Deletion support is not provided.
 
 
-      Examples
+Examples
+--------
 
  1. Harvesting ${user.home}/Documents/public/Downloads directory. The
     harvest includes the sub directories in the Downloads directory, and
