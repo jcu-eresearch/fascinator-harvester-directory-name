@@ -1,0 +1,179 @@
+{
+    "harvester": {
+        "type": "directory",
+        "default-metadata":  {
+            "occurrences": [ { 
+                "title": "%NAME_OF_FOLDER% - occurrence records filtered for species distribtuion modelling ",
+                "type": "dataset",
+                "description": [ 
+                {
+                    "type": "brief", 
+                    "value": "%NAME_OF_FOLDER% occurrence records from continental Australia suitable for species distribution modelling."
+                }, 
+                {
+                    "type": "full", 
+                    "value": " Occurence recordsfor %NAME_OF_FOLDER% were filtered from the ALA database based on ALA's 'assertions' applied to each occurrence record. Records with assertions that determined they were inappropriate for modelling (ie. 'ZERO_COORDINATES', 'INVALID SCIENTIFIC NAME') were excluded. Sensitive records have been obfuscated.\n\nBirdLife Australia provided species range information. Each occurrence record has been checked against these ranges and an assertion added against each record to label whether it is core breeding habitat, non-breeding, historic, irruptive, or invasive. Records that fall outside these ranges were marked as invalid and excluded.\n\nOccurrence records were plotted spatially and displayed online for further vetting from experts.\n\nEvery 6 months the occurrence record download file is updated to reflect recent vetting by experts. In the data download, sensitive records have been obfuscated by truncating the lat/long to two decimal places. Obfuscated records will be indicated in the data file. Access to the accurate data will need to be arranged with the original data owners - contact the ALA for more information.\n\nThe resulting downloadable file of occurrence records reflects which records are suitable for species distribution modelling. "
+                },
+                {
+                    "type": "note", 
+                    "value":  "Data is downloadable as a zipped CSV file.\n These occurrence records are displayed on Edgar: http://spatialecology.jcu.edu.au/Edgar/"
+                } ], 
+                "accessRights": "Open Access. If the data is not available via the provided link, please send an email using the address provided.",
+                "license": {
+                    "label" : "CC BY: Attribtuion", 
+                    "url": "http://creativecommons.org/licenses/by/3.0/au/"
+                },
+                "coinvestigators": ["Atlas of Living Australia; http://www.ala.org.au", "Jay coinvestigator", "Rosie coinvestigator"],
+                "researchTheme": "Tropical Ecosystems, Conservation and Climate Change",
+                "temporalCoverage": {
+                    "dateFrom" : "2012-01-01",
+                    "dateTo" : "2012-12-31"
+                },
+                "spatialCoverage": [ 
+                { 
+                    "type" : "text", 
+                    "value" : "Continental Australia" 
+                }, 
+                { 
+                    "type" : "text",
+                    "value": "POLYGON((144.497703748 -9.91029347568,133.0719225 -9.91029347568,121.646141252 -13.182069379,110.923485004 -21.2339713912,114.790672503 -38.3639598931,132.54457875 -35.2688432623,147.837547497 -46.5179669197,158.384422495 -24.1526559825,144.497703748,-9.91029347568))"
+                } ],
+                "relatedWebsite" : [
+                {
+                    "url": "http://spatialecology.jcu.edu.au/Edgar/",
+                    "notes" : "Edgar - bird occurrence record data vetting interface" 
+                } ],
+                "contactInfo" : {
+                    "email" : "Jeremy.Vanderwal@jcu.edu.au",
+                    "streetAddress" : [ 
+                        "A/Prof Jeremy VanDerWal",
+                        "Centre for Tropical Biodiversity & Climate Change", 
+                        "James Cook University",
+                        "Building 145, ATSIP",
+                        "James Cook University Drive",
+                        "Townsville, QLD, 4811",
+                        "Australia"
+                    ], 
+                    "phoneNumber" : "+61 7 4781 5570"
+                },
+                "anzsrcFOR" : [ "060208", "100108" ],
+                "anzsrcSEO" : [ "960303", "960812" ],
+                "keyword" : [ "Geographic Information System", "spatial data", "spatial analysis", "climate change", "species distribution", "GIS"],
+                "associatedParty" : [
+                { 
+                    "who" : { "type" : "people", "value" : "jeremy.vanderwal@jcu.edu.au" },
+                    "relationship" : "isManagedBy"
+                } ],
+                "organizationalGroup" : [
+                    "8"
+                ],
+                "relatedCollection" : [
+                {
+                    "title" : "%NAME_OF_FOLDER% - current and future species distribution modesl",
+                    "relationship": "hasDerivedCollection"
+                } ],
+                "relatedService" : [
+                { 
+                    "title" : "Edgar: Climate Change Impact on the Distributions of Australian Bird Species",
+                    "relationship": "isProducedBy"
+                } ],
+                "dataLocation" : "http://eresearch.jcu.edu.au/tdh/datasets/Edgar/%NAME_OF_FOLDER%",
+                "retentionPeriod" : "indefinitely"
+            } ], 
+            "suitability": [ { 
+                "title": "%NAME_OF_FOLDER% - current and future species distribution models",
+                "type": "dataset",
+                "description": [
+                {
+                    "type": "brief",
+                    "value": "This dataset consists of current and future species distribution models generated using 4 Representative Concentration Pathways (RCPs) carbon emission scenarios, 18 global climate models (GCMs), and 8 time steps between 2015 and 2085, for %NAME_OF_FOLDER%."
+                },
+                {
+                    "type": "full",
+                    "value": "Occurrence records were filtered from the Atlas of Living Australia's (ALA) database based on ALA's 'assertions', and those inappropriate for modelling were excluded.  Only species with >20 unique spatiotemporal records were used for modelling. Monthly precipitation and temperature minima and maxima from 1975 until 2005 at a 0.05° grid scale were accessed from the Australian Water Availability Project (AWAP - http://www.bom.gov.au/jsp/awap/) (Jones et al 2007, Grant et al 2008), and downscaled to a 0.01° grid. From this, we calculated annual mean temperature, temperature seasonality, max and min monthly temperature, annual precipitation, precipitation seasonality, and precipitation of the wettest and driest quarters for current. The same were generated for all RCP scenarios (RCP3PD, RCP45, RCP6, RCP85) at 8 time steps between 2015 and 2085. https://eresearch.jcu.edu.au/tdh/data/633b4ccd-2e78-459d-963c-e43d3c8a5ca1\n\nSpecies distribution models were run using the presence-only modelling program Maxent (Phillips et al 2006). Maxent uses species presence records to statistically relate species occurrence to environmental variables on the principle of maximum entropy. All default settings were used except for background point allocation. We used a target group background (Phillips & Dudik 2008) to remove any spatial or temporal sampling bias in the modelling exercise."
+                },
+                {
+                    "type": "note",
+                    "value": "These species distribution models are displayed on Edgar: http://spatialecology.jcu.edu.au/Edgar/\n\nThe dataset is a tarred, zipped file (.tar.gz), approximately 5GB in size and contains 609 ASCII grid files:\n * 1 current distribution map\n * 32 median maps - 8 time step median maps (averaged across all 18 GCMs) for each RCP\n * 576 maps - 8 time step maps for each GCM for each RCP"
+                } ],
+                "accessRights": "Open Access. If the data is not available via the provided link, please send an email using the address provided (see Location).", 
+                "license": {
+                    "label" : "CC BY: Attribtuion", 
+                    "url": "http://creativecommons.org/licenses/by/3.0/au/"
+                },
+                "coinvestigators": ["Atlas of Living Australia; http://www.ala.org.au", "Jay coinvestigator", "Rosie coinvestigator" ], 
+                "researchTheme": "Tropical Ecosystems, Conservation and Climate Change", 
+                "temporalCoverage": 
+                { 
+                    "dateFrom" : "2012-01-01", 
+                    "dateTo" : "2012-12-31"
+                }, 
+                "spatialCoverage": [ 
+                { 
+                    "type" : "text", 
+                    "value" : "Continental Australia" 
+                }, 
+                { 
+                    "type" : "text",
+                    "value": "POLYGON((144.497703748 -9.91029347568,133.0719225 -9.91029347568,121.646141252 -13.182069379,110.923485004 -21.2339713912,114.790672503 -38.3639598931,132.54457875 -35.2688432623,147.837547497 -46.5179669197,158.384422495 -24.1526559825,144.497703748,-9.91029347568))"
+                } ],
+                "relatedPublication" : [
+                {
+                    "url": "http://dx.doi.org/10.1016/j.ecomodel.2005.03.026",
+                    "title" : "Maximumentropy modeling of species geographic distributions" 
+                } ],
+                "relatedWebsite" : [
+                {
+                    "url": "http://www.cs.princeton.edu/~schapire/maxent/",
+                    "notes" : "Maxent software and further information" 
+                },
+                {
+                    "url" :  "http://spatialecology.jcu.edu.au/Edgar/",
+                    "notes" : "Edgar - bird occurrence record data vetting interface" 
+                } ],
+                "contactInfo" : {
+                    "email" : "Jeremy.Vanderwal@jcu.edu.au",
+                    "streetAddress" : [ 
+                        "A/Prof Jeremy VanDerWal",
+                        "Centre for Tropical Biodiversity & Climate Change", 
+                        "James Cook University",
+                        "Building 145, ATSIP",
+                        "James Cook University Drive",
+                        "Townsville, QLD, 4811",
+                        "Australia"
+                    ], 
+                    "phoneNumber" : "+61 7 4781 5570"
+                },
+                "anzsrcFOR" : [ "060208", "100108" ],
+                "anzsrcSEO" : [ "960303", "960812" ],
+                "keyword" : [ "Geographic Information System", "spatial data", "spatial analysis", "climate change", "species distribution", "GIS"],
+                "associatedParty" : [
+                { 
+                    "who" : { "type" : "people", "value" : "jeremy.vanderwal@jcu.edu.au" },
+                    "relationship" : "isManagedBy"
+                } ],
+                "organizationalGroup" : [
+                    "8"
+                ],
+                "relatedCollection" : [
+                {
+                    "title" : "%NAME_OF_FOLDER% - current and future species distribution modesl",
+                    "relationship": "isDerivedFrom"
+                },
+                {
+                    "title" : "All future climate layers for Australia",
+                    "relationship": "isDerivedFrom"
+                } ],
+                "relatedService" : [
+                { 
+                    "title" : "Edgar: Climate Change Impact on the Distributions of Australian Bird Species",
+                    "relationship": "isProducedBy"
+                } ],
+                "dataLocation" : "http://eresearch.jcu.edu.au/tdh/datasets/Edgar/%NAME_OF_FOLDER%",
+                "retentionPeriod" : "indefinitely"
+                } ]
+        }
+    }
+}
+
+

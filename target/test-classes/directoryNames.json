@@ -1,0 +1,38 @@
+{
+    "harvester": {
+        "type": "directory",
+        "directory": {
+            "targets": [ {
+                "baseDir": "${fascinator.home}/data/Downloads"
+            } ]
+        },
+        "default-files": {
+            "default-metadata-filename" : "edgar_default_metadata.json",
+            "override-metadata-filename": "edgar_override_metadata.json"
+        },
+        "metadata-types": [ 
+            {"type" : "occurrences"},
+            {"type" : "suitability"}
+        ]
+    },
+    "transformer": {
+        "curation": [],
+        "metadata": ["jsonVelocity"]
+    },
+    "curation": {
+        "neverPublish": false,
+        "alreadyCurated": false
+    },
+    "transformerOverrides": {
+    },
+    "indexer": {
+        "script": {
+            "type": "python",
+            "rules": "directoryNames.py"
+        },
+        "params": {
+            "repository.name": "Directory",
+            "repository.type": "Names"
+        }
+    }
+}

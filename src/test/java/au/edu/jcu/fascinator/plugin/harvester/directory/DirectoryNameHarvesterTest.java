@@ -91,6 +91,21 @@ public class DirectoryNameHarvesterTest {
      *             if any error occurs
      */
     @Test
+    public void testEdgar() throws Exception {
+        DirectoryNameHarvester fsh = getHarvester("/dir-config-edgar.json");
+        Set<String> items = fsh.getObjectIdList();
+        Assert.assertEquals(8, items.size());
+        Assert.assertFalse(fsh.hasMoreObjects());
+        fsh.shutdown();
+    }
+    
+    /**
+     * Tests a non recursive harvest
+     * 
+     * @throws Exception
+     *             if any error occurs
+     */
+    @Test
     public void getObjectIdList() throws Exception {
         DirectoryNameHarvester fsh = getHarvester("/dir-config.json");
         Set<String> items = fsh.getObjectIdList();
