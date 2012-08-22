@@ -3,19 +3,23 @@
         "type": "directory",
         "metadata": {
             "occurrences": [ {
-                    "ala_species_page" :
-                    { 
-                    "identifier" : { "type": "uri", "value": "http://bie.ala.org.au/species/Dromaius+novaehollandiea" },
-                    "notes" : "ALA - Species page for Dromaius novaehollandiae (Emu)"
-                    }
-                } ],
+                    "species_name":"Long-tailed Jaeger (Stercorarius longicaudus)",
+                    "data_source_website":[
+                        {
+                        "notes":"ALA - Species page for Long-tailed Jaeger (Stercorarius longicaudus)",
+                        "identifier":{ "type":"uri", "value":"http://bie.ala.org.au/species/Stercorarius+longicaudus" }
+                        }
+                    ]
+                }],
             "suitability": [ {
-                    "ala_species_page" :
-                    { 
-                    "identifier" : { "type": "uri", "value": "http://bie.ala.org.au/species/Dromaius+novaehollandiea" },
-                    "notes" : "ALA - Species page for Dromaius novaehollandiae (Emu)"
-                    }
-                } ]
+                    "species_name":"Long-tailed Jaeger (Stercorarius longicaudus)",
+                    "data_source_website":[
+                        {
+                        "notes":"ALA - Species page for Long-tailed Jaeger (Stercorarius longicaudus)",
+                        "identifier":{ "type":"uri", "value":"http://bie.ala.org.au/species/Stercorarius+longicaudus" }
+                        }
+                    ]
+                }]
         }
     }
 }

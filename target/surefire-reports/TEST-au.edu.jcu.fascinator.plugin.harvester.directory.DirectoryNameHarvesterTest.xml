@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="4" time="3.551" errors="0" skipped="0" tests="4" name="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest">
+<testsuite failures="0" time="10.733" errors="0" skipped="0" tests="5" name="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -23,7 +23,7 @@
     <property name="basedir" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter732157651444429760.jar"/>
+    <property name="surefire.real.class.path" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter8213221343310749016.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -48,7 +48,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter732157651444429760.jar /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire4912361185691616569tmp /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire843627207646855475tmp"/>
+    <property name="sun.java.command" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter8213221343310749016.jar /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire6911939596692062771tmp /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire397016353272694175tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -69,177 +69,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.909" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdList">
-    <failure message="expected:&lt;8&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;4&gt;
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.failNotEquals(Assert.java:689)
-	at org.junit.Assert.assertEquals(Assert.java:127)
-	at org.junit.Assert.assertEquals(Assert.java:514)
-	at org.junit.Assert.assertEquals(Assert.java:498)
-	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdList(DirectoryNameHarvesterTest.java:97)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
-	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
-	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
-	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
-</failure>
-    <system-out>16:28:11.082 [main] INFO  c.g.fascinator.common.FascinatorHome - Set Fascinator home to &apos;/Users/jarooster2/.fascinator&apos;
-16:28:11.128 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Caching is either disabled or not configured properly:
-16:28:11.128 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache Type: &apos;null&apos;
-16:28:11.128 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache ID: &apos;null&apos;
-16:28:11.128 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
-</system-out>
-  </testcase>
-  <testcase time="0.04" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListMultipleTargets">
-    <failure message="expected:&lt;16&gt; but was:&lt;8&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;16&gt; but was:&lt;8&gt;
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.failNotEquals(Assert.java:689)
-	at org.junit.Assert.assertEquals(Assert.java:127)
-	at org.junit.Assert.assertEquals(Assert.java:514)
-	at org.junit.Assert.assertEquals(Assert.java:498)
-	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdListMultipleTargets(DirectoryNameHarvesterTest.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
-	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
-	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
-	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
-</failure>
-    <system-out>16:28:11.870 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Caching is either disabled or not configured properly:
-16:28:11.870 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache Type: &apos;null&apos;
-16:28:11.870 [main] ERROR a.e.j.f.p.h.directory.DerbyCache - Cache ID: &apos;null&apos;
-16:28:11.870 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
-16:28:11.877 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads2&apos;
-</system-out>
-  </testcase>
-  <testcase time="1.603" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingChanges">
-    <failure message="expected:&lt;8&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;4&gt;
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.failNotEquals(Assert.java:689)
-	at org.junit.Assert.assertEquals(Assert.java:127)
-	at org.junit.Assert.assertEquals(Assert.java:514)
-	at org.junit.Assert.assertEquals(Assert.java:498)
-	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdListWithCachingChanges(DirectoryNameHarvesterTest.java:129)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
-	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
-	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
-	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
-</failure>
-    <system-out>16:28:13.237 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;basic&apos; not found, creating now!
-16:28:13.375 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;hashed&apos; not found, creating now!
-16:28:13.438 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
-</system-out>
-  </testcase>
-  <testcase time="0.949" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingNoChanges">
-    <failure message="expected:&lt;8&gt; but was:&lt;4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8&gt; but was:&lt;4&gt;
-	at org.junit.Assert.fail(Assert.java:92)
-	at org.junit.Assert.failNotEquals(Assert.java:689)
-	at org.junit.Assert.assertEquals(Assert.java:127)
-	at org.junit.Assert.assertEquals(Assert.java:514)
-	at org.junit.Assert.assertEquals(Assert.java:498)
-	at au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest.getObjectIdListWithCachingNoChanges(DirectoryNameHarvesterTest.java:157)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:44)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
-	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
-	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
-	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
-	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
-</failure>
-    <system-out>16:28:13.520 [main] WARN  a.e.j.f.p.h.directory.DerbyCache - Using previously specified data directory: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/dir-harvest-cache&apos;, provided value has been ignored: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/dir-harvest-cache&apos;
-16:28:14.284 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;basic&apos; not found, creating now!
-16:28:14.323 [main] DEBUG a.e.j.f.p.h.directory.DerbyCache - Table &apos;hashed&apos; not found, creating now!
-16:28:14.368 [main] INFO  a.e.j.f.p.h.d.DirectoryNameHarvester - Target file/directory found: &apos;/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory/target/test-classes/Downloads&apos;
-</system-out>
-  </testcase>
+  <testcase time="1.535" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="testEdgar"/>
+  <testcase time="0.033" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdList"/>
+  <testcase time="0.061" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListMultipleTargets"/>
+  <testcase time="5.33" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingChanges"/>
+  <testcase time="3.754" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingNoChanges"/>
 </testsuite>

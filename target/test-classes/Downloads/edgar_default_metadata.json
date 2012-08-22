@@ -61,7 +61,7 @@
                 "keyword" : [ "Geographic Information System", "spatial data", "spatial analysis", "climate change", "species distribution", "GIS"],
                 "associatedParty" : [
                 { 
-                    "who" : { "type" : "people", "value" : "jeremy.vanderwal@jcu.edu.au" },
+                    "who" : {"type" : "people", "value" : "jeremy.vanderwal@jcu.edu.au"},
                     "relationship" : "isManagedBy"
                 } ],
                 "organizationalGroup" : [
@@ -149,7 +149,7 @@
                 "keyword" : [ "Geographic Information System", "spatial data", "spatial analysis", "climate change", "species distribution", "GIS"],
                 "associatedParty" : [
                 { 
-                    "who" : { "type" : "people", "value" : "jeremy.vanderwal@jcu.edu.au" },
+                    "who" : {"type" : "people", "value" : "jeremy.vanderwal@jcu.edu.au"},
                     "relationship" : "isManagedBy"
                 } ],
                 "organizationalGroup" : [

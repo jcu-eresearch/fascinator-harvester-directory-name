@@ -160,14 +160,16 @@ class IndexData:
             self.utils.add(self.index, "dc_relation.bibo_Website." + str(i) + ".dc_title" , website["notes"])
             count = i
 
-        ###Processing the 'ala_species_page' metadata (override metadata)
-        alaSpeciesPage = data.get("ala_species_page")
-        if  alaSpeciesPage is not None:
-            type = alaSpeciesPage.get("identifier").get("type")
-            if type == "uri":
-                count += 1 
-                self.utils.add(self.index, "dc_relation.bibo_Website." + str(count) + ".dc_identifier" , alaSpeciesPage.get("identifier").get("value"))
-                self.utils.add(self.index, "dc_relation.bibo_Website." + str(count) + ".dc_title" , alaSpeciesPage["notes"])
+        ###Processing the 'data_source_website' metadata (override metadata)
+        dataSourceWebsites = data.get("data_source_website")
+        if  dataSourceWebsites is not None:
+            for i in range(len(dataSourceWebsites)):
+                website = dataSourceWebsites[i]
+                type = website.get("identifier").get("type")
+                if type == "uri":
+                    count += 1 
+                    self.utils.add(self.index, "dc_relation.bibo_Website." + str(count) + ".dc_identifier" , website.get("identifier").get("value"))
+                    self.utils.add(self.index, "dc_relation.bibo_Website." + str(count) + ".dc_title" , website["notes"])
 
         ###Processing the 'relatedCollection' metadata
         #Reading the file here, so we only do it once.
@@ -232,13 +234,13 @@ class IndexData:
                     creator = allData.get("all")
                     whoType = party.get("who").get("type")
                     if ((creator is not None) and (whoType == 'people')):
-                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".dc_identifier", creator.get("dc_identifier").toString())
+                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".dc_identifier", creator.get("dc_identifier")[0])
                         self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".foaf_name", creator.get("dc_title"))
-                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".foaf_title", creator.get("Honorific").toString())
+                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".foaf_title", creator.get("Honorific")[0])
                         self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".redbox_isCoPrimaryInvestigator", "off")
                         self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".redbox_isPrimaryInvestigator", "on")
-                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".foaf_givenName", creator.get("Given_Name").toString())
-                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".foaf_familyName", creator.get("Family_Name").toString())
+                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".foaf_givenName", creator.get("Given_Name")[0])
+                        self.utils.add(self.index, "dc_creator.foaf_Person." + str(i) + ".foaf_familyName", creator.get("Family_Name")[0])
 
         ###Processing 'contactInfo.email' metadata
         contactInfoEmail = data.get("contactInfo").get("email")
@@ -348,8 +350,8 @@ class IndexData:
                 resultMetadata = JsonObject(results.get(0))
                 allData = resultMetadata.get("result-metadata")
                 orgGroup = allData.get("all")
-                self.utils.add(self.index, "foaf_Organization.dc_identifier", orgGroup.get("dc_identifier").toString())
-                self.utils.add(self.index, "foaf_Organization.skos_prefLabel", orgGroup.get("Name").toString())
+                self.utils.add(self.index, "foaf_Organization.dc_identifier", orgGroup.get("dc_identifier")[0])
+                self.utils.add(self.index, "foaf_Organization.skos_prefLabel", orgGroup.get("Name")[0])
 
 
         self.utils.add(self.index, "foaf_fundedBy.foaf_Agent", "")
