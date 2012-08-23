@@ -3,7 +3,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>au.edu.jcu.fascinator.plugins</groupId>
+    <groupId>com.googlecode.the-fascinator.plugins</groupId>
     <artifactId>plugin-harvester-directoryName</artifactId>
     <name>The Fascinator - Plugin - Harvester - Directory Name</name>
     <description>Performs a batch harvest of a directory name in a filesystem supported by Java</description>
@@ -54,17 +54,17 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
                 <executions>
-                <execution>
-                    <phase>package</phase>
-                    <goals>
-                    <goal>jar</goal>
-                    </goals>
-                    <configuration>
-                    <excludes>
-                        <exclude>.DS_Store</exclude>
-                    </excludes>
-                    </configuration>
-                </execution>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <excludes>
+                                <exclude>.DS_Store</exclude>
+                            </excludes>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>

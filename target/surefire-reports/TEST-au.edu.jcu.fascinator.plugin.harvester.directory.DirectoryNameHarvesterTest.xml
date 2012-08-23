@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="10.733" errors="0" skipped="0" tests="5" name="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest">
+<testsuite failures="0" time="4.968" errors="0" skipped="0" tests="5" name="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -23,7 +23,7 @@
     <property name="basedir" value="/Users/jarooster2/NetBeansProjects/TheFascinator-Plugin-Harvester-Directory"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter8213221343310749016.jar"/>
+    <property name="surefire.real.class.path" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter3943216643912717325.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -48,7 +48,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter8213221343310749016.jar /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire6911939596692062771tmp /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire397016353272694175tmp"/>
+    <property name="sun.java.command" value="/var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefirebooter3943216643912717325.jar /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire4462324740549390975tmp /var/folders/kz/pckv88dn2fzdt4nb0x99pcqc0000gn/T/surefire6186642510640190979tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -69,9 +69,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="1.535" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="testEdgar"/>
-  <testcase time="0.033" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdList"/>
-  <testcase time="0.061" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListMultipleTargets"/>
-  <testcase time="5.33" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingChanges"/>
-  <testcase time="3.754" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingNoChanges"/>
+  <testcase time="1.842" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="testEdgar"/>
+  <testcase time="0.077" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdList"/>
+  <testcase time="0.031" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListMultipleTargets"/>
+  <testcase time="2.166" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingChanges"/>
+  <testcase time="0.819" classname="au.edu.jcu.fascinator.plugin.harvester.directory.DirectoryNameHarvesterTest" name="getObjectIdListWithCachingNoChanges"/>
 </testsuite>

@@ -6,6 +6,10 @@
                 "baseDir": "${fascinator.home}/data/Downloads"
             } ]
         },
+        "file-system": {
+            "caching": "basic",
+            "cacheId": "config-caching"
+        },        
         "default-files": {
             "default-metadata-filename" : "edgar_default_metadata.json",
             "override-metadata-filename": "edgar_override_metadata.json"
@@ -14,10 +18,6 @@
             {"type" : "occurrences"},
             {"type" : "suitability"}
         ]
-    },
-    "transformer": {
-        "curation": [],
-        "metadata": ["jsonVelocity"]
     },
     "curation": {
         "neverPublish": false,
