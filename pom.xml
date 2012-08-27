@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.googlecode.the-fascinator.plugins</groupId>
     <artifactId>plugin-harvester-directoryName</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <name>The Fascinator - Plugin - Harvester - Directory Name</name>
     <description>Performs a batch harvest of a directory name in a filesystem supported by Java</description>
     <url>http://maven.apache.org</url>
@@ -14,17 +15,24 @@
     <parent>
         <groupId>com.googlecode.the-fascinator</groupId>
         <artifactId>fascinator-plugins</artifactId>
-        <version>1.2-SNAPSHOT</version>
+        <version>1.1.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <dependencies>
         <dependency>
             <groupId>com.googlecode.the-fascinator</groupId>
             <artifactId>fascinator-common</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.the-fascinator</groupId>
             <artifactId>fascinator-plugin-api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.the-fascinator</groupId>
+            <artifactId>fascinator-vocabulary</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>commons-codec</groupId>
@@ -38,6 +46,7 @@
             <groupId>com.googlecode.the-fascinator.plugins</groupId>
             <artifactId>plugin-storage-ram</artifactId>
             <scope>test</scope>
+            <version>${project.parent.version}</version>
         </dependency>
      <!-- Database -->
         <dependency>
