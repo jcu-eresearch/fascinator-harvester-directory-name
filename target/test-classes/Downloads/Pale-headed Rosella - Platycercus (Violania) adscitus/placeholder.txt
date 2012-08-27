@@ -1,3 +1,0 @@
-This file has been created to ensure Git uploads the directory.
-The purpose is to demonstrate that the directory name harvester will 
-process directories without an override metadata file.
