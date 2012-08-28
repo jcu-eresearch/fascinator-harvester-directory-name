@@ -30,6 +30,12 @@ Configuration
 	<td> ${user.home}/Documents/public/</td>
 </tr>
 <tr>
+        <td>recordIDPrefix</td>
+        <td>A prefix applied to all records created</td>
+        <td><b>No</b></td>
+        <td></td>
+</tr>
+<tr>
 	<td>force</td>
 	<td>Force harvest the specified directory or file again even when it's not modified (ignore cache) </td>
 	<td>No </td>
