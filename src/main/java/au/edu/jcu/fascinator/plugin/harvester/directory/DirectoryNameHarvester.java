@@ -94,6 +94,13 @@ import org.json.simple.JSONArray;
  *        </tr>
  *
  *        <tr>
+ *            <td>recordIDPrefix</td>
+ *            <td>A prefix applied to all records created</td>
+ *            <td><b>No</b></td>
+ *            <td></td>
+ *        </tr>
+ *
+ *        <tr>
  *            <td>force</td>
  *            <td>Force harvest the specified directory or file again even when it's not
  *                modified (ignore cache)</td>
@@ -162,7 +169,8 @@ import org.json.simple.JSONArray;
  *        "type": "directory",
  *        "directory": {
  *            "targets": [ {
- *                "baseDir": "${test.dir}/Downloads"
+ *                "baseDir": "${test.dir}/Downloads",
+ *                "recordIDPrefix": "jcu.edu.au/tdh/collection/"
  *            } ]
  *        },
  *        "file-system": {
@@ -603,7 +611,7 @@ public class DirectoryNameHarvester extends GenericHarvester {
         }
 
         JsonObject meta = new JsonObject();
-        meta.put("dc.identifier", idPrefix + directory + type);
+        meta.put("dc.identifier", idPrefix + directory + "/" + type);
 
         storeJsonInObject(data.getJsonObject(), meta, oid);
         list.add(oid);

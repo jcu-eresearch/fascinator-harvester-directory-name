@@ -3,7 +3,8 @@
         "type": "directory",
         "directory": {
             "targets": [ {
-                "baseDir": "${fascinator.home}/data/Downloads"
+                "baseDir": "${fascinator.home}/data/Downloads",
+                "recordIDPrefix": "jcu.edu.au/tdh/collection/"                
             } ]
         },
         "file-system": {

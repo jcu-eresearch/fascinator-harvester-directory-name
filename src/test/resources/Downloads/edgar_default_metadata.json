@@ -12,7 +12,7 @@
                 }, 
                 {
                     "type": "full", 
-                    "value": " Occurence recordsfor %NAME_OF_FOLDER% were filtered from the ALA database based on ALA's 'assertions' applied to each occurrence record. Records with assertions that determined they were inappropriate for modelling (ie. 'ZERO_COORDINATES', 'INVALID SCIENTIFIC NAME') were excluded. Sensitive records have been obfuscated.\n\nBirdLife Australia provided species range information. Each occurrence record has been checked against these ranges and an assertion added against each record to label whether it is core breeding habitat, non-breeding, historic, irruptive, or invasive. Records that fall outside these ranges were marked as invalid and excluded.\n\nOccurrence records were plotted spatially and displayed online for further vetting from experts.\n\nEvery 6 months the occurrence record download file is updated to reflect recent vetting by experts. In the data download, sensitive records have been obfuscated by truncating the lat/long to two decimal places. Obfuscated records will be indicated in the data file. Access to the accurate data will need to be arranged with the original data owners - contact the ALA for more information.\n\nThe resulting downloadable file of occurrence records reflects which records are suitable for species distribution modelling. "
+                    "value": " Occurence records for %NAME_OF_FOLDER% were filtered from the ALA database based on ALA's 'assertions' applied to each occurrence record. Records with assertions that determined they were inappropriate for modelling (ie. 'ZERO_COORDINATES', 'INVALID SCIENTIFIC NAME') were excluded. Sensitive records have been obfuscated.\n\nBirdLife Australia provided species range information. Each occurrence record has been checked against these ranges and an assertion added against each record to label whether it is core breeding habitat, non-breeding, historic, irruptive, or invasive. Records that fall outside these ranges were marked as invalid and excluded.\n\nOccurrence records were plotted spatially and displayed online for further vetting from experts.\n\nEvery 6 months the occurrence record download file is updated to reflect recent vetting by experts. In the data download, sensitive records have been obfuscated by truncating the lat/long to two decimal places. Obfuscated records will be indicated in the data file. Access to the accurate data will need to be arranged with the original data owners - contact the ALA for more information.\n\nThe resulting downloadable file of occurrence records reflects which records are suitable for species distribution modelling. "
                 },
                 {
                     "type": "note", 
@@ -23,7 +23,7 @@
                     "label" : "CC BY: Attribtuion", 
                     "url": "http://creativecommons.org/licenses/by/3.0/au/"
                 },
-                "coinvestigators": ["Atlas of Living Australia; http://www.ala.org.au", "Jay coinvestigator", "Rosie coinvestigator"],
+                "coinvestigators": ["Atlas of Living Australia; http://www.ala.org.au"],
                 "researchTheme": "Tropical Ecosystems, Conservation and Climate Change",
                 "temporalCoverage": {
                     "dateFrom" : "2012-01-01",
@@ -70,7 +70,8 @@
                 "relatedCollection" : [
                 {
                     "title" : "%NAME_OF_FOLDER% - current and future species distribution modesl",
-                    "relationship": "hasDerivedCollection"
+                    "relationship": "hasDerivedCollection",
+                    "identifier" : "jcu.edu.au/tdh/collection/%NAME_OF_FOLDER%/suitability"
                 } ],
                 "relatedService" : [
                 { 
@@ -101,7 +102,7 @@
                     "label" : "CC BY: Attribtuion", 
                     "url": "http://creativecommons.org/licenses/by/3.0/au/"
                 },
-                "coinvestigators": ["Atlas of Living Australia; http://www.ala.org.au", "Jay coinvestigator", "Rosie coinvestigator" ], 
+                "coinvestigators": ["Atlas of Living Australia; http://www.ala.org.au"], 
                 "researchTheme": "Tropical Ecosystems, Conservation and Climate Change", 
                 "temporalCoverage": 
                 { 
@@ -120,7 +121,7 @@
                 "relatedPublication" : [
                 {
                     "url": "http://dx.doi.org/10.1016/j.ecomodel.2005.03.026",
-                    "title" : "Maximumentropy modeling of species geographic distributions" 
+                    "title" : "Maximum entropy modeling of species geographic distributions" 
                 } ],
                 "relatedWebsite" : [
                 {
@@ -158,7 +159,8 @@
                 "relatedCollection" : [
                 {
                     "title" : "%NAME_OF_FOLDER% - current and future species distribution modesl",
-                    "relationship": "isDerivedFrom"
+                    "relationship": "isDerivedFrom",
+                    "identifier" : "jcu.edu.au/tdh/collection/%NAME_OF_FOLDER%/suitability"
                 },
                 {
                     "title" : "All future climate layers for Australia",

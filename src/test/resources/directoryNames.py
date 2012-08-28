@@ -179,21 +179,12 @@ class IndexData:
         relatedCollection = data.get("relatedCollection")
         for i in range(len(relatedCollection)):
             collection = relatedCollection[i]
-            #Using species to obtain the dc_identfier from RedBox
-            #birdSpecies = species.split(" - ", 1)
-            #print("****birdSpecies[0]: " + birdSpecies[0])
-            #conn = httplib.HTTPConnection(redboxHost)
-            #url = "/solr/fascinator/select?wt=json&indent=on&q=dc_title%3A%22" + birdSpecies[0] + "*%22"
-            #print("****url: " + url)
-            #conn.request("GET", url)
-            #response = conn.getresponse()
-            #redboxData = response.read()
-            #jsonSimple = JsonSimple(redboxData)            
-            #jsonObj = jsonSimple.getJsonObject()
-            #conn.close()
-            #response = jsonObj.get("response")
-            #print ("****response: " + response.toString())
-            #self.utils.add(self.index, "dc_relation.vivo_Dataset." + str(i) + ".dc_identifier", str.)
+            tempIdentifier = collection["identifier"]
+            if tempIdentifier is not None:
+                tempIdentifier = tempIdentifier.replace("%NAME_OF_FOLDER%", species)
+            else:
+                tempIdentifier = ""
+            self.utils.add(self.index, "dc_relation.vivo_Dataset." + str(i) + ".dc_identifier", tempIdentifier)
             tempTitle = collection.get("title")
             tempTitle = tempTitle.replace("%NAME_OF_FOLDER%", species)
             self.utils.add(self.index, "dc_relation.vivo_Dataset." + str(i) + ".dc_title", tempTitle)
