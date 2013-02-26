@@ -1,25 +1,25 @@
-/* 
+/*
  * The Fascinator - Directory Name Harvester Plugin
  * Copyright (C) 2012 James Cook University
- * 
- * Acknowledgements: This Harvester plugin is based on two plugins 
- * - CSVHarvester - com.googlecode.fascinator.harvester.csv 
+ *
+ * Acknowledgements: This Harvester plugin is based on two plugins
+ * - CSVHarvester - com.googlecode.fascinator.harvester.csv
  *      - author Greg Pendlebury
  *      - Queensland Cyber Infrastructure Foundation (http://www.qcif.edu.au/)
  * - FileSystemHarvester - com.googlecode.fascinator.harvester.filesystem
  *      - author - Oliver Lucido
  *      - University of Southern Queensland (http://www.usq.edu.au/)
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License along
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
@@ -52,24 +52,24 @@ import org.json.simple.JSONArray;
 
 /*
  *    <p>
- *        This plugin harvests subdirectory names in a specified 
- *        directory in the file system. It can use a cache to do 
+ *        This plugin harvests subdirectory names in a specified
+ *        directory in the file system. It can use a cache to do
  *        incremental harvests, which only harvest directories that have been
  *        added since the last time it was run.
  *
- *        The directory name harvested is used in conjunction with a default 
- *        metadata file (default-metadata.json) to create metadata about 
+ *        The directory name harvested is used in conjunction with a default
+ *        metadata file (default-metadata.json) to create metadata about
  *        the directory.
  *
- *        Each directory harvested, may contain an override metadata file 
+ *        Each directory harvested, may contain an override metadata file
  *        (metadata.json) to replace the default metadata or even add to the
  *       default metadata.
  *
- *        This harvester was built to harvest bird species where standard 
- *        metadata applied to each species, but an override file may exist to 
+ *        This harvester was built to harvest bird species where standard
+ *        metadata applied to each species, but an override file may exist to
  *        provide replacement or additional metadata details.
  *
- *        Both the default metadata and override metadata files can contain 
+ *        Both the default metadata and override metadata files can contain
  *        multiple types of metadata to be created for each species. A unique
  *        record is created for each metadata type detected.
  *
@@ -120,7 +120,7 @@ import org.json.simple.JSONArray;
  *            <td>Yes (if valid 'caching' value is provided)</td>
  *            <td>null</td>
  *        </tr>
- *        <tr><td>payloadId</td> 
+ *        <tr><td>payloadId</td>
  *            <td>The payload identifier used to store the JSON data</td>
  *            <td>No</td>
  *            <td>defaults to "metadata.json"</td>
@@ -155,11 +155,11 @@ import org.json.simple.JSONArray;
  *    <ol>
  *        <li>
  *            Harvesting ${user.home}/Documents/public/Downloads directory. The
- *            harvest includes the sub directories in the Downloads directory, and does 
- *            not re-harvest unmodified directories if they exist in the cache 
- *            database under the 'default' cache. Below is a sample configuration 
- *            file: dir-config.json. This configuration specifies a single target 
- *            directory, has caching setup, specifies the names of the default files 
+ *            harvest includes the sub directories in the Downloads directory, and does
+ *            not re-harvest unmodified directories if they exist in the cache
+ *            database under the 'default' cache. Below is a sample configuration
+ *            file: dir-config.json. This configuration specifies a single target
+ *            directory, has caching setup, specifies the names of the default files
  *            and that each directory being harvested contains two types of metadata.
  *            This means that two records will be created for each directory (bird species)
  *            processed.
@@ -181,7 +181,7 @@ import org.json.simple.JSONArray;
  *            "default-metadata-filename" : "default-metadata.json",
  *            "override-metadata-filename": "metadata.json"
  *        },
- *        "metadata-types": [ 
+ *        "metadata-types": [
  *            {"type" : "occurrences"},
  *            {"type" : "suitability"}
  *        ]
@@ -196,16 +196,16 @@ import org.json.simple.JSONArray;
  *            Below is an example directory structure with the default and override metadata files listed. Actions taken by the harvester are detailed.
  *            <pre>
  *Downloads                                                     (dir)
- *|----default-metadata.json                                    (file) The metadata types and the metadata contained 
+ *|----default-metadata.json                                    (file) The metadata types and the metadata contained
  *|                                                                    in this file is applied to all birds species
- *|----Australian Raven - Corvus coronoides                     (dir)  A record is created for this folder name with 
+ *|----Australian Raven - Corvus coronoides                     (dir)  A record is created for this folder name with
  *|                                                                    the default metadata for each type.
- *|----Crimson Rosella - Platycercus (Platycercus) elegans      (dir)  A record is created for this folder name with 
+ *|----Crimson Rosella - Platycercus (Platycercus) elegans      (dir)  A record is created for this folder name with
  *|    |                                                               the default metadata overridden by metadata.json for each type.
  *|    ----metadata.json                                        (file) Override metadata file for Crimson Rosella
- *|----Pale-headed Rosella - Platycercus (Violania) adscitus    (dir)  A record is created for this folder name with 
+ *|----Pale-headed Rosella - Platycercus (Violania) adscitus    (dir)  A record is created for this folder name with
  *|                                                                    the default metadata for each type.
- *|----Southern Cassowary - Casuaris casuaris                   (dir)  A record is created for this folder name with 
+ *|----Southern Cassowary - Casuaris casuaris                   (dir)  A record is created for this folder name with
  *        |                                                               the default metadata overridden by metadata.json for each type.
  *       ----metadata.json                                        (file) Override metadata file for Southern Cassowary
  *            </pre>
@@ -351,7 +351,7 @@ public class DirectoryNameHarvester extends GenericHarvester {
     @Override
     public void init() throws HarvesterException {
         // Check for valid targests
-        targets = getJsonConfig().getJsonSimpleList("harvester", "directory", 
+        targets = getJsonConfig().getJsonSimpleList("harvester", "directory",
                 "targets");
         if (targets.isEmpty()) {
             throw new HarvesterException("No targets specified");
@@ -360,10 +360,10 @@ public class DirectoryNameHarvester extends GenericHarvester {
         //obtain the metadata filenames
         JsonSimple defaultFilenames = new JsonSimple(getJsonConfig().getObject("harvester", "default-files"));
 
-        //this filename is expected to exist in the main folder, it provides the 
+        //this filename is expected to exist in the main folder, it provides the
         //standard metadata for all directories
         defaultMetadataFilename = defaultFilenames.getString("null", "default-metadata-filename");
-        //this filename is optional, it may exist in the directories being 
+        //this filename is optional, it may exist in the directories being
         //processed. It's contents can override and add to the default metadata
         overrideMetadataFilename = defaultFilenames.getString("null", "override-metadata-filename");
 
@@ -376,7 +376,7 @@ public class DirectoryNameHarvester extends GenericHarvester {
 
         //obtain the metadata types
         metadataTypes = getJsonConfig().getJsonSimpleList("harvester", "metadata-types");
-                
+
         // Loop processing variables
         fileStack = new Stack<File>();
         targetIndex = null;
@@ -530,7 +530,7 @@ public class DirectoryNameHarvester extends GenericHarvester {
      * @param file The file to harvest
      * @throws HarvesterException if there are errors
      */
-    
+
     private void harvestDirectory(Set<String> list, File file)
             throws HarvesterException {
 
@@ -547,7 +547,7 @@ public class DirectoryNameHarvester extends GenericHarvester {
                     log.warn("Directory not harvested {}: {}", file, se.getMessage());
                 }
             }
-        }        
+        }
     }
 
     /**
@@ -577,22 +577,26 @@ public class DirectoryNameHarvester extends GenericHarvester {
 
         //obtaining directory name to use as part of the metadata
         String directory = file.getName();
-        
+
         //read the override metadata file if it exists
         JsonSimple overrideMeta = null;
-        
-        try { 
-            this.overrideMetadata = new JsonSimple(new File(file, this.overrideMetadataFilename)); 
-            overrideMeta = new JsonSimple(this.overrideMetadata.getObject("harvester", "metadata"));        
-        } catch (IOException ex) { 
-            log.info("Metadata override file does not exist: ", file + this.overrideMetadataFilename); 
-        }         
-        
+
+        try {
+            this.overrideMetadata = new JsonSimple(new File(file, this.overrideMetadataFilename));
+            overrideMeta = new JsonSimple(this.overrideMetadata.getObject("harvester", "metadata"));
+        } catch (IOException ex) {
+            log.info("Metadata override file does not exist: ", file + this.overrideMetadataFilename);
+        }
+
         JsonSimple defaultMetadata = new JsonSimple(this.defaultMetadata.getObject("harvester", "default-metadata"));
-        
+
         //asembling the data
         JsonSimple data = new JsonSimple();
-        //adding the species (the directory name) to the data        
+        // new bit: adding the directory name to the data with an accurate key name.
+        data.getJsonObject().put("harvest_dir_name", directory);
+        // adding the species (the directory name) to the data.  The following line
+        // can be removed once the Edgar harvester Python code is changed to use the
+        // new keyname.
         data.getJsonObject().put("species", directory);
 
         //Merging the default metadata with the override metadata
